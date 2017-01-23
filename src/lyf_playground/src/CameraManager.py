@@ -2,6 +2,7 @@ import cv2
 import time
 import picamera
 from picamera.array import PiRGBArray
+import rospy
 
 class CameraManager():
     def __init__(self, cameraIndex):
@@ -13,6 +14,8 @@ class CameraManager():
             self.camera.resolution = (640,480)
             self.stream = PiRGBArray(self.camera,size=(640,480))
             self.type = cameraIndex
+            rospy.set_param('camera_resolution_x', 640)
+            rospy.set_param('camera_resolution_y', 480) 
     def getFrame(self):
         if self.type == 0:
             for i in xrange(10):

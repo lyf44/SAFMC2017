@@ -25,22 +25,22 @@ class Classifier():
         # morphology operation to remove noise, can be set to larger value
         kernel = np.ones((15, 15), np.uint8)
         opening = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
-        res = cv2.bitwise_and(frame, frame, mask=opening)
-        cv2.imshow('mask', res)
+        # res = cv2.bitwise_and(frame, frame, mask=opening)
+        # cv2.imshow('mask', res)
         # print("Time took to classify: ",time.time()-start)
         return (hsv_frame,opening)
 
     def findLocation(self,frame):
         _,mask = self.classify(frame)
         # cv2.imshow("mask",mask)
-        contours, hier = cv2.findContours(mask,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
-        if(contours==None):
-            return None
+        _,contours, hier = cv2.findContours(mask,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+        if not contours:
+            return None,None
         c = max(contours, key=cv2.contourArea)
         (x, y), radius = cv2.minEnclosingCircle(c)
         center = (int(x),int(y))
         radius = int(radius)
-        print(int(x),int(y),radius)
+        # print(int(x),int(y),radius)
         return (center,radius)
 
 
