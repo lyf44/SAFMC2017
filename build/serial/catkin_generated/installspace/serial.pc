@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/drones/install
+
+Name: serial
+Description: Description of serial
+Version: 1.2.1
+Cflags: -I/home/ubuntu/drones/install/include
+Libs: -L/home/ubuntu/drones/install/lib -lserial
+Requires: 

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/serial_example.dir/examples/serial_example.cc.o  -o /home/ubuntu/drones/devel/lib/serial/serial_example -rdynamic /home/ubuntu/drones/devel/lib/libserial.so -lrt -lpthread -Wl,-rpath,/home/ubuntu/drones/devel/lib 

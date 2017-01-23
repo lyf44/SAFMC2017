@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/drones/devel
+
+Name: uwb_abl
+Description: Description of uwb_abl
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ubuntu/drones/devel/lib 
+Requires: 

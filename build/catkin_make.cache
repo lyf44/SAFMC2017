@@ -1,0 +1,2 @@
+lyf_playground:serial
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/drones/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/drones/install -G Unix Makefiles
