@@ -8,4 +8,3 @@
 
 # modified environment variables
 export PWD="/home/ubuntu/drones/build"
-export PYTHONPATH="/home/ubuntu/drones/devel/lib/python2.7/dist-packages:$PYTHONPATH"

@@ -1,2 +1,2 @@
-lyf_playground:serial
+lyf_playground:serial:vicon_xb
 -DCATKIN_DEVEL_PREFIX=/home/ubuntu/drones/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/drones/install -G Unix Makefiles

@@ -8,13 +8,14 @@ import CameraManager
 import Classifier
 
 def CtrCordPublisher():
+    
+
     pub = rospy.Publisher('CentreCordString', String, queue_size=10)
     pub1 = rospy.Publisher('CentreCordInt', IntArray, queue_size = 10)
     rospy.init_node('CtrCordPublisher', anonymous=True)
     rate = rospy.Rate(10) # 10hz
 
-    #rosparam test
-    rospy.set_param('height', 0.5) 
+
     
     # choose which camera to use
     # 0 for USB webcam

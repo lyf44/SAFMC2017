@@ -7,3 +7,4 @@
 subdirs(gtest)
 subdirs(serial)
 subdirs(lyf_playground)
+subdirs(vicon_xb)

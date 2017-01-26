@@ -2,15 +2,18 @@
 import rospy
 from std_msgs.msg import String
 from lyf_playground.msg import IntArray
+from lyf_playground.msg import FloatArray
 import math
 
 focalLength = 0.0036 # 3.6 mm provided by the documentation
-pub = rospy.Publisher('realCord', IntArray, queue_size=10)
-height = rospy.get_param("height")
-res_half_X = rospy.get_param("camera_resolution_x")/2
-res_half_Y = rospy.get_param("camera_resolution_y")/2
+pub = rospy.Publisher('cameraPose', FloatArray, queue_size=10)
+height = rospy.get_param('/CtrCordPublisher/height')
+res_half_X = rospy.get_param('camera_resolution_x')/2
+res_half_Y = rospy.get_param('camera_resolution_y')/2
 coef_X = math.tan(53.5/180*math.pi/2)*focalLength/res_half_X; # horizontal field of view = 53.5 degree
 coef_Y = math.tan(41.4/180*math.pi/2)*focalLength/res_half_Y; # vertical field of view = 41.4 degree
+markCord_X = rospy.get_param('/CtrCordPublisher/markCord_X')
+markCord_Y = rospy.get_param('/CtrCordPublisher/markCord_Y')
 
 def callback(data):
     Cord = data.data
@@ -19,9 +22,11 @@ def callback(data):
     
     realDistance_X = (Cord[0] - res_half_X)*coef_X*height/focalLength
     realDistance_Y = (Cord[1] - res_half_Y)*coef_Y*height/focalLength
-    realCord = IntArray()
-    realCord.data = [realDistance_X,realDistance_Y]
+
+    realCord = FloatArray()
+    realCord.data = [realDistance_X+markCord_X,realDistance_Y+markCord_Y]
     print(realCord.data)
+    global pub
     pub.publish(realCord)
     
  
@@ -34,7 +39,7 @@ def PositionCalculator():
     # name for our 'listener' node so that multiple listeners can
     # run simultaneously.
     rospy.init_node('PositionCalculator', anonymous=True)
-    rospy.Subscriber("CentreCordInt", IntArray, callback)
+    rospy.Subscriber('CentreCordInt', IntArray, callback)
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()

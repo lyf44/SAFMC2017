@@ -369,7 +369,8 @@ rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
 //Value Computed by CMake
 serial_BINARY_DIR:STATIC=/home/ubuntu/drones/build/serial
 
-serial_DIR:PATH=
+//The directory containing a CMake configuration file for serial.
+serial_DIR:PATH=/home/ubuntu/drones/devel/share/serial/cmake
 
 //Dependencies for the target
 serial_LIB_DEPENDS:STATIC=general;rt;general;pthread;
@@ -385,6 +386,12 @@ uwb_abl_BINARY_DIR:STATIC=/home/ubuntu/drones/build/uwb_abl
 
 //Value Computed by CMake
 uwb_abl_SOURCE_DIR:STATIC=/home/ubuntu/drones/src/uwb_abl
+
+//Value Computed by CMake
+vicon_xb_BINARY_DIR:STATIC=/home/ubuntu/drones/build/vicon_xb
+
+//Value Computed by CMake
+vicon_xb_SOURCE_DIR:STATIC=/home/ubuntu/drones/src/vicon_xb
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
@@ -503,7 +510,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

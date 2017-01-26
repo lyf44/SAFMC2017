@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lyf_playground_generate_messages_cpp"
   "/home/ubuntu/drones/devel/include/lyf_playground/IntArray.h"
+  "/home/ubuntu/drones/devel/include/lyf_playground/FloatArray.h"
 )
 
 # Per-language clean rules from dependency scanning.

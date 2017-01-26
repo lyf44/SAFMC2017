@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/drones/build
 include lyf_playground/CMakeFiles/lyf_playground_generate_messages_eus.dir/progress.make
 
 lyf_playground/CMakeFiles/lyf_playground_generate_messages_eus: /home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/msg/IntArray.l
+lyf_playground/CMakeFiles/lyf_playground_generate_messages_eus: /home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/msg/FloatArray.l
 lyf_playground/CMakeFiles/lyf_playground_generate_messages_eus: /home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/manifest.l
 
 
@@ -62,12 +63,18 @@ lyf_playground/CMakeFiles/lyf_playground_generate_messages_eus: /home/ubuntu/dro
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/drones/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from lyf_playground/IntArray.msg"
 	cd /home/ubuntu/drones/build/lyf_playground && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg -Ilyf_playground:/home/ubuntu/drones/src/lyf_playground/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p lyf_playground -o /home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/msg
 
+/home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/msg/FloatArray.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/msg/FloatArray.l: /home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/drones/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from lyf_playground/FloatArray.msg"
+	cd /home/ubuntu/drones/build/lyf_playground && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg -Ilyf_playground:/home/ubuntu/drones/src/lyf_playground/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p lyf_playground -o /home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/msg
+
 /home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/drones/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for lyf_playground"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/drones/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for lyf_playground"
 	cd /home/ubuntu/drones/build/lyf_playground && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/ubuntu/drones/devel/share/roseus/ros/lyf_playground lyf_playground std_msgs
 
 lyf_playground_generate_messages_eus: lyf_playground/CMakeFiles/lyf_playground_generate_messages_eus
 lyf_playground_generate_messages_eus: /home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/msg/IntArray.l
+lyf_playground_generate_messages_eus: /home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/msg/FloatArray.l
 lyf_playground_generate_messages_eus: /home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/manifest.l
 lyf_playground_generate_messages_eus: lyf_playground/CMakeFiles/lyf_playground_generate_messages_eus.dir/build.make
 

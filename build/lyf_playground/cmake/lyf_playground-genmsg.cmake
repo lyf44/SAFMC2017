@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "lyf_playground: 1 messages, 0 services")
+message(STATUS "lyf_playground: 2 messages, 0 services")
 
 set(MSG_I_FLAGS "-Ilyf_playground:/home/ubuntu/drones/src/lyf_playground/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_lyf_playground_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lyf_playground" "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg" ""
 )
 
+get_filename_component(_filename "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg" NAME_WE)
+add_custom_target(_lyf_playground_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lyf_playground" "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -30,6 +35,12 @@ add_custom_target(_lyf_playground_generate_messages_check_deps_${_filename}
 ### Generating Messages
 _generate_msg_cpp(lyf_playground
   "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/lyf_playground
+)
+_generate_msg_cpp(lyf_playground
+  "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/lyf_playground
@@ -51,6 +62,8 @@ add_dependencies(lyf_playground_generate_messages lyf_playground_generate_messag
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg" NAME_WE)
 add_dependencies(lyf_playground_generate_messages_cpp _lyf_playground_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg" NAME_WE)
+add_dependencies(lyf_playground_generate_messages_cpp _lyf_playground_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(lyf_playground_gencpp)
@@ -63,6 +76,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lyf_playground_generate_messages_cp
 ### Generating Messages
 _generate_msg_eus(lyf_playground
   "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/lyf_playground
+)
+_generate_msg_eus(lyf_playground
+  "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/lyf_playground
@@ -84,6 +103,8 @@ add_dependencies(lyf_playground_generate_messages lyf_playground_generate_messag
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg" NAME_WE)
 add_dependencies(lyf_playground_generate_messages_eus _lyf_playground_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg" NAME_WE)
+add_dependencies(lyf_playground_generate_messages_eus _lyf_playground_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(lyf_playground_geneus)
@@ -96,6 +117,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lyf_playground_generate_messages_eu
 ### Generating Messages
 _generate_msg_lisp(lyf_playground
   "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/lyf_playground
+)
+_generate_msg_lisp(lyf_playground
+  "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/lyf_playground
@@ -117,6 +144,8 @@ add_dependencies(lyf_playground_generate_messages lyf_playground_generate_messag
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg" NAME_WE)
 add_dependencies(lyf_playground_generate_messages_lisp _lyf_playground_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg" NAME_WE)
+add_dependencies(lyf_playground_generate_messages_lisp _lyf_playground_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(lyf_playground_genlisp)
@@ -129,6 +158,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lyf_playground_generate_messages_li
 ### Generating Messages
 _generate_msg_nodejs(lyf_playground
   "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/lyf_playground
+)
+_generate_msg_nodejs(lyf_playground
+  "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/lyf_playground
@@ -150,6 +185,8 @@ add_dependencies(lyf_playground_generate_messages lyf_playground_generate_messag
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg" NAME_WE)
 add_dependencies(lyf_playground_generate_messages_nodejs _lyf_playground_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg" NAME_WE)
+add_dependencies(lyf_playground_generate_messages_nodejs _lyf_playground_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(lyf_playground_gennodejs)
@@ -162,6 +199,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lyf_playground_generate_messages_no
 ### Generating Messages
 _generate_msg_py(lyf_playground
   "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/lyf_playground
+)
+_generate_msg_py(lyf_playground
+  "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/lyf_playground
@@ -182,6 +225,8 @@ add_dependencies(lyf_playground_generate_messages lyf_playground_generate_messag
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg" NAME_WE)
+add_dependencies(lyf_playground_generate_messages_py _lyf_playground_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg" NAME_WE)
 add_dependencies(lyf_playground_generate_messages_py _lyf_playground_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

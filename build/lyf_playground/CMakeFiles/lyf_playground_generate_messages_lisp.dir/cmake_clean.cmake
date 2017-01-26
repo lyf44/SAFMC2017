@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lyf_playground_generate_messages_lisp"
   "/home/ubuntu/drones/devel/share/common-lisp/ros/lyf_playground/msg/IntArray.lisp"
+  "/home/ubuntu/drones/devel/share/common-lisp/ros/lyf_playground/msg/FloatArray.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

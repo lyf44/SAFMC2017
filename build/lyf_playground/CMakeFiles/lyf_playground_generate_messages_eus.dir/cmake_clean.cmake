@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lyf_playground_generate_messages_eus"
   "/home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/msg/IntArray.l"
+  "/home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/msg/FloatArray.l"
   "/home/ubuntu/drones/devel/share/roseus/ros/lyf_playground/manifest.l"
 )
 

@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/drones/build
 include lyf_playground/CMakeFiles/lyf_playground_generate_messages_cpp.dir/progress.make
 
 lyf_playground/CMakeFiles/lyf_playground_generate_messages_cpp: /home/ubuntu/drones/devel/include/lyf_playground/IntArray.h
+lyf_playground/CMakeFiles/lyf_playground_generate_messages_cpp: /home/ubuntu/drones/devel/include/lyf_playground/FloatArray.h
 
 
 /home/ubuntu/drones/devel/include/lyf_playground/IntArray.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
@@ -62,8 +63,15 @@ lyf_playground/CMakeFiles/lyf_playground_generate_messages_cpp: /home/ubuntu/dro
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/drones/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from lyf_playground/IntArray.msg"
 	cd /home/ubuntu/drones/build/lyf_playground && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg -Ilyf_playground:/home/ubuntu/drones/src/lyf_playground/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p lyf_playground -o /home/ubuntu/drones/devel/include/lyf_playground -e /opt/ros/kinetic/share/gencpp/cmake/..
 
+/home/ubuntu/drones/devel/include/lyf_playground/FloatArray.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/drones/devel/include/lyf_playground/FloatArray.h: /home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg
+/home/ubuntu/drones/devel/include/lyf_playground/FloatArray.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/drones/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from lyf_playground/FloatArray.msg"
+	cd /home/ubuntu/drones/build/lyf_playground && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg -Ilyf_playground:/home/ubuntu/drones/src/lyf_playground/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p lyf_playground -o /home/ubuntu/drones/devel/include/lyf_playground -e /opt/ros/kinetic/share/gencpp/cmake/..
+
 lyf_playground_generate_messages_cpp: lyf_playground/CMakeFiles/lyf_playground_generate_messages_cpp
 lyf_playground_generate_messages_cpp: /home/ubuntu/drones/devel/include/lyf_playground/IntArray.h
+lyf_playground_generate_messages_cpp: /home/ubuntu/drones/devel/include/lyf_playground/FloatArray.h
 lyf_playground_generate_messages_cpp: lyf_playground/CMakeFiles/lyf_playground_generate_messages_cpp.dir/build.make
 
 .PHONY : lyf_playground_generate_messages_cpp

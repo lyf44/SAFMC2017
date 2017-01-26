@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/drones/build
 include lyf_playground/CMakeFiles/lyf_playground_generate_messages_nodejs.dir/progress.make
 
 lyf_playground/CMakeFiles/lyf_playground_generate_messages_nodejs: /home/ubuntu/drones/devel/share/gennodejs/ros/lyf_playground/msg/IntArray.js
+lyf_playground/CMakeFiles/lyf_playground_generate_messages_nodejs: /home/ubuntu/drones/devel/share/gennodejs/ros/lyf_playground/msg/FloatArray.js
 
 
 /home/ubuntu/drones/devel/share/gennodejs/ros/lyf_playground/msg/IntArray.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
@@ -61,8 +62,14 @@ lyf_playground/CMakeFiles/lyf_playground_generate_messages_nodejs: /home/ubuntu/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/drones/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from lyf_playground/IntArray.msg"
 	cd /home/ubuntu/drones/build/lyf_playground && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg -Ilyf_playground:/home/ubuntu/drones/src/lyf_playground/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p lyf_playground -o /home/ubuntu/drones/devel/share/gennodejs/ros/lyf_playground/msg
 
+/home/ubuntu/drones/devel/share/gennodejs/ros/lyf_playground/msg/FloatArray.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/ubuntu/drones/devel/share/gennodejs/ros/lyf_playground/msg/FloatArray.js: /home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/drones/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from lyf_playground/FloatArray.msg"
+	cd /home/ubuntu/drones/build/lyf_playground && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg -Ilyf_playground:/home/ubuntu/drones/src/lyf_playground/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p lyf_playground -o /home/ubuntu/drones/devel/share/gennodejs/ros/lyf_playground/msg
+
 lyf_playground_generate_messages_nodejs: lyf_playground/CMakeFiles/lyf_playground_generate_messages_nodejs
 lyf_playground_generate_messages_nodejs: /home/ubuntu/drones/devel/share/gennodejs/ros/lyf_playground/msg/IntArray.js
+lyf_playground_generate_messages_nodejs: /home/ubuntu/drones/devel/share/gennodejs/ros/lyf_playground/msg/FloatArray.js
 lyf_playground_generate_messages_nodejs: lyf_playground/CMakeFiles/lyf_playground_generate_messages_nodejs.dir/build.make
 
 .PHONY : lyf_playground_generate_messages_nodejs

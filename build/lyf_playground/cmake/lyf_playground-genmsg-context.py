@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg"
+messages_str = "/home/ubuntu/drones/src/lyf_playground/msg/IntArray.msg;/home/ubuntu/drones/src/lyf_playground/msg/FloatArray.msg"
 services_str = ""
 pkg_name = "lyf_playground"
 dependencies_str = "std_msgs"
