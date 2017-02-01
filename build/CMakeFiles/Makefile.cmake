@@ -243,6 +243,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "lyf_playground/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake"
   "lyf_playground/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "lyf_playground/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"
+  "lyf_playground/CMakeFiles/AttitudePublisher.dir/DependInfo.cmake"
   "lyf_playground/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake"
   "lyf_playground/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "lyf_playground/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake"

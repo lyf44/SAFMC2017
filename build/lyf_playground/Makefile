@@ -421,6 +421,21 @@ roscpp_generate_messages_lisp/fast:
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
+lyf_playground/CMakeFiles/AttitudePublisher.dir/rule:
+	cd /home/ubuntu/drones/build && $(MAKE) -f CMakeFiles/Makefile2 lyf_playground/CMakeFiles/AttitudePublisher.dir/rule
+.PHONY : lyf_playground/CMakeFiles/AttitudePublisher.dir/rule
+
+# Convenience name for target.
+AttitudePublisher: lyf_playground/CMakeFiles/AttitudePublisher.dir/rule
+
+.PHONY : AttitudePublisher
+
+# fast build rule for target.
+AttitudePublisher/fast:
+	cd /home/ubuntu/drones/build && $(MAKE) -f lyf_playground/CMakeFiles/AttitudePublisher.dir/build.make lyf_playground/CMakeFiles/AttitudePublisher.dir/build
+.PHONY : AttitudePublisher/fast
+
+# Convenience name for target.
 lyf_playground/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
 	cd /home/ubuntu/drones/build && $(MAKE) -f CMakeFiles/Makefile2 lyf_playground/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : lyf_playground/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
@@ -585,6 +600,33 @@ lyf_playground_geneus/fast:
 	cd /home/ubuntu/drones/build && $(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_geneus.dir/build.make lyf_playground/CMakeFiles/lyf_playground_geneus.dir/build
 .PHONY : lyf_playground_geneus/fast
 
+src/AttitudePublisher.o: src/AttitudePublisher.cpp.o
+
+.PHONY : src/AttitudePublisher.o
+
+# target to build an object file
+src/AttitudePublisher.cpp.o:
+	cd /home/ubuntu/drones/build && $(MAKE) -f lyf_playground/CMakeFiles/AttitudePublisher.dir/build.make lyf_playground/CMakeFiles/AttitudePublisher.dir/src/AttitudePublisher.cpp.o
+.PHONY : src/AttitudePublisher.cpp.o
+
+src/AttitudePublisher.i: src/AttitudePublisher.cpp.i
+
+.PHONY : src/AttitudePublisher.i
+
+# target to preprocess a source file
+src/AttitudePublisher.cpp.i:
+	cd /home/ubuntu/drones/build && $(MAKE) -f lyf_playground/CMakeFiles/AttitudePublisher.dir/build.make lyf_playground/CMakeFiles/AttitudePublisher.dir/src/AttitudePublisher.cpp.i
+.PHONY : src/AttitudePublisher.cpp.i
+
+src/AttitudePublisher.s: src/AttitudePublisher.cpp.s
+
+.PHONY : src/AttitudePublisher.s
+
+# target to generate assembly for a file
+src/AttitudePublisher.cpp.s:
+	cd /home/ubuntu/drones/build && $(MAKE) -f lyf_playground/CMakeFiles/AttitudePublisher.dir/build.make lyf_playground/CMakeFiles/AttitudePublisher.dir/src/AttitudePublisher.cpp.s
+.PHONY : src/AttitudePublisher.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -615,6 +657,7 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
+	@echo "... AttitudePublisher"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
@@ -626,6 +669,9 @@ help:
 	@echo "... lyf_playground_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... lyf_playground_geneus"
+	@echo "... src/AttitudePublisher.o"
+	@echo "... src/AttitudePublisher.i"
+	@echo "... src/AttitudePublisher.s"
 .PHONY : help
 
 

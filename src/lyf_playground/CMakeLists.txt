@@ -133,16 +133,19 @@ include_directories(
 
 ## Declare a C++ executable
 # add_executable(lyf_playground_node src/lyf_playground_node.cpp)
+add_executable(AttitudePublisher src/AttitudePublisher.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(lyf_playground_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(AttitudePublisher lyf_playground_generate_message_cpp)
 
 ## Specify libraries to link a library or executable target against
 #target_link_libraries(lyf_playground_node
 #  ${catkin_LIBRARIES}
 #  ${OpenCV_LIBRARIES}
 # )
+target_link_libraries(AttitudePublisher ${catkin_LIBRARIES})
 
 #############
 ## Install ##

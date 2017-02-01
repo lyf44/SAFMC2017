@@ -660,6 +660,19 @@ roscpp_generate_messages_lisp/fast:
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named AttitudePublisher
+
+# Build rule for target.
+AttitudePublisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AttitudePublisher
+.PHONY : AttitudePublisher
+
+# fast build rule for target.
+AttitudePublisher/fast:
+	$(MAKE) -f lyf_playground/CMakeFiles/AttitudePublisher.dir/build.make lyf_playground/CMakeFiles/AttitudePublisher.dir/build
+.PHONY : AttitudePublisher/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
 
 # Build rule for target.
@@ -1035,6 +1048,7 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
+	@echo "... AttitudePublisher"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
