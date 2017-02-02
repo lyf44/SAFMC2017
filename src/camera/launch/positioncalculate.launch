@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+ <node pkg="camera" name="CtrCordPublisher" type="CtrCordPublisher.py">
+    <param name="height" type="double" value="0.59" />
+    <param name="markCord_X" type="double" value="-0.945" />
+    <param name="markCord_Y" type="double" value="-1.936" />
+ </node>
+ 
+ <node pkg="cemera" name="PositionCalculator" type="PositionCalculator.py" respawn = "true"/>
+
+ <include file="$(find vicon_xb)/launch/vicon_xb.launch"/>
+
+</launch>

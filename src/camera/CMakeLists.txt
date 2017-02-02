@@ -4,7 +4,7 @@ project(lyf_playground)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
+find_package(catkin REQUIRED COMPONENTS  
   roscpp
   rospy
   std_msgs
@@ -14,7 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## System dependencies are found with CMake's conventions
  find_package(Boost REQUIRED COMPONENTS system)
  find_package(OpenCV)
-
+ find_package(catkin REQUIRED dynamic_reconfigure)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -91,7 +91,10 @@ add_message_files(
 #   cfg/DynReconf1.cfg
 #   cfg/DynReconf2.cfg
 # )
-
+generate_dynamic_reconfigure_options(
+  cfg/PID.cfg
+  #...
+)
 ###################################
 ## catkin specific configuration ##
 ###################################
@@ -103,7 +106,7 @@ add_message_files(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES lyf_playground
+  LIBRARIES camera
   CATKIN_DEPENDS message_runtime roscpp rospy std_msgs
   DEPENDS system_lib
 )
@@ -122,26 +125,26 @@ include_directories(
 
 
 ## Declare a C++ library
-# add_library(lyf_playground
-#   src/${PROJECT_NAME}/lyf_playground.cpp
+# add_library(camera
+#   src/${PROJECT_NAME}/camera.cpp
 # )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
-# add_dependencies(lyf_playground ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(camera ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
-# add_executable(lyf_playground_node src/lyf_playground_node.cpp)
+# add_executable(camera src/camera.cpp)
 add_executable(AttitudePublisher src/AttitudePublisher.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-# add_dependencies(lyf_playground_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(AttitudePublisher lyf_playground_generate_message_cpp)
-
+# add_dependencies(camera_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(AttitudePublisher camera_generate_message_cpp)
+add_dependencies(AttitudePublisher ${PROJECT_NAME}_gencfg)
 ## Specify libraries to link a library or executable target against
-#target_link_libraries(lyf_playground_node
+#target_link_libraries(camera_node
 #  ${catkin_LIBRARIES}
 #  ${OpenCV_LIBRARIES}
 # )
@@ -162,7 +165,7 @@ target_link_libraries(AttitudePublisher ${catkin_LIBRARIES})
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS lyf_playground lyf_playground_node
+# install(TARGETS camera camera_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -187,7 +190,7 @@ target_link_libraries(AttitudePublisher ${catkin_LIBRARIES})
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_lyf_playground.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_camera.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
