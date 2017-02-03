@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/drones/devel
+
+Name: camera
+Description: Description of camera
+Version: 0.0.0
+Cflags: -I/home/ubuntu/drones/devel/include -I/home/ubuntu/drones/src/camera/include
+Libs: -L/home/ubuntu/drones/devel/lib -lcamera
+Requires: message_runtime roscpp rospy std_msgs

@@ -257,238 +257,108 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named _catkin_empty_exported_target
+# Target rules for targets named camera_genpy
 
 # Build rule for target.
-_catkin_empty_exported_target: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
-.PHONY : _catkin_empty_exported_target
+camera_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_genpy
+.PHONY : camera_genpy
 
 # fast build rule for target.
-_catkin_empty_exported_target/fast:
-	$(MAKE) -f serial/CMakeFiles/_catkin_empty_exported_target.dir/build.make serial/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
+camera_genpy/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_genpy.dir/build.make camera/CMakeFiles/camera_genpy.dir/build
+.PHONY : camera_genpy/fast
 
 #=============================================================================
-# Target rules for targets named serial_example
+# Target rules for targets named camera_generate_messages_py
 
 # Build rule for target.
-serial_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 serial_example
-.PHONY : serial_example
+camera_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_generate_messages_py
+.PHONY : camera_generate_messages_py
 
 # fast build rule for target.
-serial_example/fast:
-	$(MAKE) -f serial/CMakeFiles/serial_example.dir/build.make serial/CMakeFiles/serial_example.dir/build
-.PHONY : serial_example/fast
+camera_generate_messages_py/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_generate_messages_py.dir/build.make camera/CMakeFiles/camera_generate_messages_py.dir/build
+.PHONY : camera_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named serial
+# Target rules for targets named camera_gencfg
 
 # Build rule for target.
-serial: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 serial
-.PHONY : serial
+camera_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_gencfg
+.PHONY : camera_gencfg
 
 # fast build rule for target.
-serial/fast:
-	$(MAKE) -f serial/CMakeFiles/serial.dir/build.make serial/CMakeFiles/serial.dir/build
-.PHONY : serial/fast
+camera_gencfg/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_gencfg.dir/build.make camera/CMakeFiles/camera_gencfg.dir/build
+.PHONY : camera_gencfg/fast
 
 #=============================================================================
-# Target rules for targets named _run_tests_serial_gtest_serial-test-timer
+# Target rules for targets named camera_generate_messages_nodejs
 
 # Build rule for target.
-_run_tests_serial_gtest_serial-test-timer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_serial_gtest_serial-test-timer
-.PHONY : _run_tests_serial_gtest_serial-test-timer
+camera_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_generate_messages_nodejs
+.PHONY : camera_generate_messages_nodejs
 
 # fast build rule for target.
-_run_tests_serial_gtest_serial-test-timer/fast:
-	$(MAKE) -f serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test-timer.dir/build.make serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test-timer.dir/build
-.PHONY : _run_tests_serial_gtest_serial-test-timer/fast
+camera_generate_messages_nodejs/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_generate_messages_nodejs.dir/build.make camera/CMakeFiles/camera_generate_messages_nodejs.dir/build
+.PHONY : camera_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named run_tests_serial_gtest
+# Target rules for targets named camera_geneus
 
 # Build rule for target.
-run_tests_serial_gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_serial_gtest
-.PHONY : run_tests_serial_gtest
+camera_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_geneus
+.PHONY : camera_geneus
 
 # fast build rule for target.
-run_tests_serial_gtest/fast:
-	$(MAKE) -f serial/tests/CMakeFiles/run_tests_serial_gtest.dir/build.make serial/tests/CMakeFiles/run_tests_serial_gtest.dir/build
-.PHONY : run_tests_serial_gtest/fast
+camera_geneus/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_geneus.dir/build.make camera/CMakeFiles/camera_geneus.dir/build
+.PHONY : camera_geneus/fast
 
 #=============================================================================
-# Target rules for targets named serial-test-timer
+# Target rules for targets named camera_generate_messages_cpp
 
 # Build rule for target.
-serial-test-timer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 serial-test-timer
-.PHONY : serial-test-timer
+camera_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_generate_messages_cpp
+.PHONY : camera_generate_messages_cpp
 
 # fast build rule for target.
-serial-test-timer/fast:
-	$(MAKE) -f serial/tests/CMakeFiles/serial-test-timer.dir/build.make serial/tests/CMakeFiles/serial-test-timer.dir/build
-.PHONY : serial-test-timer/fast
+camera_generate_messages_cpp/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_generate_messages_cpp.dir/build.make camera/CMakeFiles/camera_generate_messages_cpp.dir/build
+.PHONY : camera_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named run_tests_serial
+# Target rules for targets named _camera_generate_messages_check_deps_IntArray
 
 # Build rule for target.
-run_tests_serial: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_serial
-.PHONY : run_tests_serial
+_camera_generate_messages_check_deps_IntArray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _camera_generate_messages_check_deps_IntArray
+.PHONY : _camera_generate_messages_check_deps_IntArray
 
 # fast build rule for target.
-run_tests_serial/fast:
-	$(MAKE) -f serial/tests/CMakeFiles/run_tests_serial.dir/build.make serial/tests/CMakeFiles/run_tests_serial.dir/build
-.PHONY : run_tests_serial/fast
+_camera_generate_messages_check_deps_IntArray/fast:
+	$(MAKE) -f camera/CMakeFiles/_camera_generate_messages_check_deps_IntArray.dir/build.make camera/CMakeFiles/_camera_generate_messages_check_deps_IntArray.dir/build
+.PHONY : _camera_generate_messages_check_deps_IntArray/fast
 
 #=============================================================================
-# Target rules for targets named _run_tests_serial_gtest_serial-test
+# Target rules for targets named camera_generate_messages_lisp
 
 # Build rule for target.
-_run_tests_serial_gtest_serial-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_serial_gtest_serial-test
-.PHONY : _run_tests_serial_gtest_serial-test
+camera_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_generate_messages_lisp
+.PHONY : camera_generate_messages_lisp
 
 # fast build rule for target.
-_run_tests_serial_gtest_serial-test/fast:
-	$(MAKE) -f serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/build.make serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/build
-.PHONY : _run_tests_serial_gtest_serial-test/fast
-
-#=============================================================================
-# Target rules for targets named serial-test
-
-# Build rule for target.
-serial-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 serial-test
-.PHONY : serial-test
-
-# fast build rule for target.
-serial-test/fast:
-	$(MAKE) -f serial/tests/CMakeFiles/serial-test.dir/build.make serial/tests/CMakeFiles/serial-test.dir/build
-.PHONY : serial-test/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_serial
-
-# Build rule for target.
-_run_tests_serial: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_serial
-.PHONY : _run_tests_serial
-
-# fast build rule for target.
-_run_tests_serial/fast:
-	$(MAKE) -f serial/tests/CMakeFiles/_run_tests_serial.dir/build.make serial/tests/CMakeFiles/_run_tests_serial.dir/build
-.PHONY : _run_tests_serial/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_serial_gtest
-
-# Build rule for target.
-_run_tests_serial_gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_serial_gtest
-.PHONY : _run_tests_serial_gtest
-
-# fast build rule for target.
-_run_tests_serial_gtest/fast:
-	$(MAKE) -f serial/tests/CMakeFiles/_run_tests_serial_gtest.dir/build.make serial/tests/CMakeFiles/_run_tests_serial_gtest.dir/build
-.PHONY : _run_tests_serial_gtest/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_serial_gtest_serial-test
-
-# Build rule for target.
-run_tests_serial_gtest_serial-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_serial_gtest_serial-test
-.PHONY : run_tests_serial_gtest_serial-test
-
-# fast build rule for target.
-run_tests_serial_gtest_serial-test/fast:
-	$(MAKE) -f serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test.dir/build.make serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test.dir/build
-.PHONY : run_tests_serial_gtest_serial-test/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_serial_gtest_serial-test-timer
-
-# Build rule for target.
-run_tests_serial_gtest_serial-test-timer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_serial_gtest_serial-test-timer
-.PHONY : run_tests_serial_gtest_serial-test-timer
-
-# fast build rule for target.
-run_tests_serial_gtest_serial-test-timer/fast:
-	$(MAKE) -f serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test-timer.dir/build.make serial/tests/CMakeFiles/run_tests_serial_gtest_serial-test-timer.dir/build
-.PHONY : run_tests_serial_gtest_serial-test-timer/fast
-
-#=============================================================================
-# Target rules for targets named clean_test_results_serial
-
-# Build rule for target.
-clean_test_results_serial: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_serial
-.PHONY : clean_test_results_serial
-
-# fast build rule for target.
-clean_test_results_serial/fast:
-	$(MAKE) -f serial/tests/CMakeFiles/clean_test_results_serial.dir/build.make serial/tests/CMakeFiles/clean_test_results_serial.dir/build
-.PHONY : clean_test_results_serial/fast
-
-#=============================================================================
-# Target rules for targets named lyf_playground_generate_messages_py
-
-# Build rule for target.
-lyf_playground_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lyf_playground_generate_messages_py
-.PHONY : lyf_playground_generate_messages_py
-
-# fast build rule for target.
-lyf_playground_generate_messages_py/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_generate_messages_py.dir/build.make lyf_playground/CMakeFiles/lyf_playground_generate_messages_py.dir/build
-.PHONY : lyf_playground_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named lyf_playground_generate_messages_nodejs
-
-# Build rule for target.
-lyf_playground_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lyf_playground_generate_messages_nodejs
-.PHONY : lyf_playground_generate_messages_nodejs
-
-# fast build rule for target.
-lyf_playground_generate_messages_nodejs/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_generate_messages_nodejs.dir/build.make lyf_playground/CMakeFiles/lyf_playground_generate_messages_nodejs.dir/build
-.PHONY : lyf_playground_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named lyf_playground_genlisp
-
-# Build rule for target.
-lyf_playground_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lyf_playground_genlisp
-.PHONY : lyf_playground_genlisp
-
-# fast build rule for target.
-lyf_playground_genlisp/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_genlisp.dir/build.make lyf_playground/CMakeFiles/lyf_playground_genlisp.dir/build
-.PHONY : lyf_playground_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named lyf_playground_generate_messages_lisp
-
-# Build rule for target.
-lyf_playground_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lyf_playground_generate_messages_lisp
-.PHONY : lyf_playground_generate_messages_lisp
-
-# fast build rule for target.
-lyf_playground_generate_messages_lisp/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_generate_messages_lisp.dir/build.make lyf_playground/CMakeFiles/lyf_playground_generate_messages_lisp.dir/build
-.PHONY : lyf_playground_generate_messages_lisp/fast
+camera_generate_messages_lisp/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_generate_messages_lisp.dir/build.make camera/CMakeFiles/camera_generate_messages_lisp.dir/build
+.PHONY : camera_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_lisp
@@ -500,21 +370,34 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make lyf_playground/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f camera/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make camera/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named _lyf_playground_generate_messages_check_deps_IntArray
+# Target rules for targets named camera_gennodejs
 
 # Build rule for target.
-_lyf_playground_generate_messages_check_deps_IntArray: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _lyf_playground_generate_messages_check_deps_IntArray
-.PHONY : _lyf_playground_generate_messages_check_deps_IntArray
+camera_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_gennodejs
+.PHONY : camera_gennodejs
 
 # fast build rule for target.
-_lyf_playground_generate_messages_check_deps_IntArray/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/_lyf_playground_generate_messages_check_deps_IntArray.dir/build.make lyf_playground/CMakeFiles/_lyf_playground_generate_messages_check_deps_IntArray.dir/build
-.PHONY : _lyf_playground_generate_messages_check_deps_IntArray/fast
+camera_gennodejs/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_gennodejs.dir/build.make camera/CMakeFiles/camera_gennodejs.dir/build
+.PHONY : camera_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f camera/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make camera/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_py
@@ -526,21 +409,8 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make lyf_playground/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named lyf_playground_gennodejs
-
-# Build rule for target.
-lyf_playground_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lyf_playground_gennodejs
-.PHONY : lyf_playground_gennodejs
-
-# fast build rule for target.
-lyf_playground_gennodejs/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_gennodejs.dir/build.make lyf_playground/CMakeFiles/lyf_playground_gennodejs.dir/build
-.PHONY : lyf_playground_gennodejs/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
@@ -552,21 +422,21 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/roscpp_generate_messages_py.dir/build.make lyf_playground/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f camera/CMakeFiles/roscpp_generate_messages_py.dir/build.make camera/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named lyf_playground_genpy
+# Target rules for targets named camera_generate_messages_eus
 
 # Build rule for target.
-lyf_playground_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lyf_playground_genpy
-.PHONY : lyf_playground_genpy
+camera_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_generate_messages_eus
+.PHONY : camera_generate_messages_eus
 
 # fast build rule for target.
-lyf_playground_genpy/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_genpy.dir/build.make lyf_playground/CMakeFiles/lyf_playground_genpy.dir/build
-.PHONY : lyf_playground_genpy/fast
+camera_generate_messages_eus/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_generate_messages_eus.dir/build.make camera/CMakeFiles/camera_generate_messages_eus.dir/build
+.PHONY : camera_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
@@ -578,21 +448,8 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make lyf_playground/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f camera/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make camera/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_cpp
-
-# Build rule for target.
-std_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make lyf_playground/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
@@ -604,21 +461,47 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make lyf_playground/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f camera/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make camera/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_eus
+# Target rules for targets named camera_gencpp
 
 # Build rule for target.
-roscpp_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
-.PHONY : roscpp_generate_messages_eus
+camera_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_gencpp
+.PHONY : camera_gencpp
 
 # fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/roscpp_generate_messages_eus.dir/build.make lyf_playground/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
+camera_gencpp/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_gencpp.dir/build.make camera/CMakeFiles/camera_gencpp.dir/build
+.PHONY : camera_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_gencfg
+
+# Build rule for target.
+dynamic_reconfigure_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_gencfg
+.PHONY : dynamic_reconfigure_gencfg
+
+# fast build rule for target.
+dynamic_reconfigure_gencfg/fast:
+	$(MAKE) -f camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+.PHONY : dynamic_reconfigure_gencfg/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
@@ -630,7 +513,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/std_msgs_generate_messages_py.dir/build.make lyf_playground/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f camera/CMakeFiles/std_msgs_generate_messages_py.dir/build.make camera/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -643,7 +526,7 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make lyf_playground/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f camera/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make camera/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -656,7 +539,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make lyf_playground/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f camera/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make camera/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -669,7 +552,7 @@ AttitudePublisher: cmake_check_build_system
 
 # fast build rule for target.
 AttitudePublisher/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/AttitudePublisher.dir/build.make lyf_playground/CMakeFiles/AttitudePublisher.dir/build
+	$(MAKE) -f camera/CMakeFiles/AttitudePublisher.dir/build.make camera/CMakeFiles/AttitudePublisher.dir/build
 .PHONY : AttitudePublisher/fast
 
 #=============================================================================
@@ -682,7 +565,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make lyf_playground/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) -f camera/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make camera/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -695,99 +578,8 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make lyf_playground/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f camera/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make camera/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_nodejs
-
-# Build rule for target.
-std_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make lyf_playground/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named lyf_playground_generate_messages
-
-# Build rule for target.
-lyf_playground_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lyf_playground_generate_messages
-.PHONY : lyf_playground_generate_messages
-
-# fast build rule for target.
-lyf_playground_generate_messages/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_generate_messages.dir/build.make lyf_playground/CMakeFiles/lyf_playground_generate_messages.dir/build
-.PHONY : lyf_playground_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_cpp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make lyf_playground/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named _lyf_playground_generate_messages_check_deps_FloatArray
-
-# Build rule for target.
-_lyf_playground_generate_messages_check_deps_FloatArray: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _lyf_playground_generate_messages_check_deps_FloatArray
-.PHONY : _lyf_playground_generate_messages_check_deps_FloatArray
-
-# fast build rule for target.
-_lyf_playground_generate_messages_check_deps_FloatArray/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/_lyf_playground_generate_messages_check_deps_FloatArray.dir/build.make lyf_playground/CMakeFiles/_lyf_playground_generate_messages_check_deps_FloatArray.dir/build
-.PHONY : _lyf_playground_generate_messages_check_deps_FloatArray/fast
-
-#=============================================================================
-# Target rules for targets named lyf_playground_gencpp
-
-# Build rule for target.
-lyf_playground_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lyf_playground_gencpp
-.PHONY : lyf_playground_gencpp
-
-# fast build rule for target.
-lyf_playground_gencpp/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_gencpp.dir/build.make lyf_playground/CMakeFiles/lyf_playground_gencpp.dir/build
-.PHONY : lyf_playground_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named lyf_playground_generate_messages_eus
-
-# Build rule for target.
-lyf_playground_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lyf_playground_generate_messages_eus
-.PHONY : lyf_playground_generate_messages_eus
-
-# fast build rule for target.
-lyf_playground_generate_messages_eus/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_generate_messages_eus.dir/build.make lyf_playground/CMakeFiles/lyf_playground_generate_messages_eus.dir/build
-.PHONY : lyf_playground_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named lyf_playground_generate_messages_cpp
-
-# Build rule for target.
-lyf_playground_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lyf_playground_generate_messages_cpp
-.PHONY : lyf_playground_generate_messages_cpp
-
-# fast build rule for target.
-lyf_playground_generate_messages_cpp/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_generate_messages_cpp.dir/build.make lyf_playground/CMakeFiles/lyf_playground_generate_messages_cpp.dir/build
-.PHONY : lyf_playground_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_lisp
@@ -799,203 +591,138 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make lyf_playground/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named lyf_playground_geneus
+# Target rules for targets named camera_genlisp
 
 # Build rule for target.
-lyf_playground_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lyf_playground_geneus
-.PHONY : lyf_playground_geneus
+camera_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_genlisp
+.PHONY : camera_genlisp
 
 # fast build rule for target.
-lyf_playground_geneus/fast:
-	$(MAKE) -f lyf_playground/CMakeFiles/lyf_playground_geneus.dir/build.make lyf_playground/CMakeFiles/lyf_playground_geneus.dir/build
-.PHONY : lyf_playground_geneus/fast
+camera_genlisp/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_genlisp.dir/build.make camera/CMakeFiles/camera_genlisp.dir/build
+.PHONY : camera_genlisp/fast
 
 #=============================================================================
-# Target rules for targets named vicon_xb_node
+# Target rules for targets named std_msgs_generate_messages_nodejs
 
 # Build rule for target.
-vicon_xb_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_node
-.PHONY : vicon_xb_node
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
+.PHONY : std_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-vicon_xb_node/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_node.dir/build.make vicon_xb/CMakeFiles/vicon_xb_node.dir/build
-.PHONY : vicon_xb_node/fast
+std_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f camera/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make camera/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named vicon_xb_genpy
+# Target rules for targets named dynamic_reconfigure_generate_messages_cpp
 
 # Build rule for target.
-vicon_xb_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_genpy
-.PHONY : vicon_xb_genpy
+dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_cpp
+.PHONY : dynamic_reconfigure_generate_messages_cpp
 
 # fast build rule for target.
-vicon_xb_genpy/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_genpy.dir/build.make vicon_xb/CMakeFiles/vicon_xb_genpy.dir/build
-.PHONY : vicon_xb_genpy/fast
+dynamic_reconfigure_generate_messages_cpp/fast:
+	$(MAKE) -f camera/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make camera/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named vicon_xb_generate_messages_py
+# Target rules for targets named dynamic_reconfigure_generate_messages_py
 
 # Build rule for target.
-vicon_xb_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_generate_messages_py
-.PHONY : vicon_xb_generate_messages_py
+dynamic_reconfigure_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_py
+.PHONY : dynamic_reconfigure_generate_messages_py
 
 # fast build rule for target.
-vicon_xb_generate_messages_py/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_generate_messages_py.dir/build.make vicon_xb/CMakeFiles/vicon_xb_generate_messages_py.dir/build
-.PHONY : vicon_xb_generate_messages_py/fast
+dynamic_reconfigure_generate_messages_py/fast:
+	$(MAKE) -f camera/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make camera/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named vicon_xb_generate_messages
+# Target rules for targets named dynamic_reconfigure_generate_messages_eus
 
 # Build rule for target.
-vicon_xb_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_generate_messages
-.PHONY : vicon_xb_generate_messages
+dynamic_reconfigure_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_eus
+.PHONY : dynamic_reconfigure_generate_messages_eus
 
 # fast build rule for target.
-vicon_xb_generate_messages/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_generate_messages.dir/build.make vicon_xb/CMakeFiles/vicon_xb_generate_messages.dir/build
-.PHONY : vicon_xb_generate_messages/fast
+dynamic_reconfigure_generate_messages_eus/fast:
+	$(MAKE) -f camera/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make camera/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named vicon_xb_gencpp
+# Target rules for targets named roscpp_generate_messages_eus
 
 # Build rule for target.
-vicon_xb_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_gencpp
-.PHONY : vicon_xb_gencpp
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
 
 # fast build rule for target.
-vicon_xb_gencpp/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_gencpp.dir/build.make vicon_xb/CMakeFiles/vicon_xb_gencpp.dir/build
-.PHONY : vicon_xb_gencpp/fast
+roscpp_generate_messages_eus/fast:
+	$(MAKE) -f camera/CMakeFiles/roscpp_generate_messages_eus.dir/build.make camera/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named vicon_xb_geneus
+# Target rules for targets named dynamic_reconfigure_generate_messages_lisp
 
 # Build rule for target.
-vicon_xb_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_geneus
-.PHONY : vicon_xb_geneus
+dynamic_reconfigure_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_lisp
+.PHONY : dynamic_reconfigure_generate_messages_lisp
 
 # fast build rule for target.
-vicon_xb_geneus/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_geneus.dir/build.make vicon_xb/CMakeFiles/vicon_xb_geneus.dir/build
-.PHONY : vicon_xb_geneus/fast
+dynamic_reconfigure_generate_messages_lisp/fast:
+	$(MAKE) -f camera/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make camera/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named vicon_xb_gennodejs
+# Target rules for targets named dynamic_reconfigure_generate_messages_nodejs
 
 # Build rule for target.
-vicon_xb_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_gennodejs
-.PHONY : vicon_xb_gennodejs
+dynamic_reconfigure_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_nodejs
+.PHONY : dynamic_reconfigure_generate_messages_nodejs
 
 # fast build rule for target.
-vicon_xb_gennodejs/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_gennodejs.dir/build.make vicon_xb/CMakeFiles/vicon_xb_gennodejs.dir/build
-.PHONY : vicon_xb_gennodejs/fast
+dynamic_reconfigure_generate_messages_nodejs/fast:
+	$(MAKE) -f camera/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make camera/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named vicon_xb_generate_messages_cpp
+# Target rules for targets named _camera_generate_messages_check_deps_FloatArray
 
 # Build rule for target.
-vicon_xb_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_generate_messages_cpp
-.PHONY : vicon_xb_generate_messages_cpp
+_camera_generate_messages_check_deps_FloatArray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _camera_generate_messages_check_deps_FloatArray
+.PHONY : _camera_generate_messages_check_deps_FloatArray
 
 # fast build rule for target.
-vicon_xb_generate_messages_cpp/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_generate_messages_cpp.dir/build.make vicon_xb/CMakeFiles/vicon_xb_generate_messages_cpp.dir/build
-.PHONY : vicon_xb_generate_messages_cpp/fast
+_camera_generate_messages_check_deps_FloatArray/fast:
+	$(MAKE) -f camera/CMakeFiles/_camera_generate_messages_check_deps_FloatArray.dir/build.make camera/CMakeFiles/_camera_generate_messages_check_deps_FloatArray.dir/build
+.PHONY : _camera_generate_messages_check_deps_FloatArray/fast
 
 #=============================================================================
-# Target rules for targets named _vicon_xb_generate_messages_check_deps_viconPoseMsg
+# Target rules for targets named camera_generate_messages
 
 # Build rule for target.
-_vicon_xb_generate_messages_check_deps_viconPoseMsg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _vicon_xb_generate_messages_check_deps_viconPoseMsg
-.PHONY : _vicon_xb_generate_messages_check_deps_viconPoseMsg
+camera_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_generate_messages
+.PHONY : camera_generate_messages
 
 # fast build rule for target.
-_vicon_xb_generate_messages_check_deps_viconPoseMsg/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/_vicon_xb_generate_messages_check_deps_viconPoseMsg.dir/build.make vicon_xb/CMakeFiles/_vicon_xb_generate_messages_check_deps_viconPoseMsg.dir/build
-.PHONY : _vicon_xb_generate_messages_check_deps_viconPoseMsg/fast
-
-#=============================================================================
-# Target rules for targets named vicon_xb_generate_messages_eus
-
-# Build rule for target.
-vicon_xb_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_generate_messages_eus
-.PHONY : vicon_xb_generate_messages_eus
-
-# fast build rule for target.
-vicon_xb_generate_messages_eus/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_generate_messages_eus.dir/build.make vicon_xb/CMakeFiles/vicon_xb_generate_messages_eus.dir/build
-.PHONY : vicon_xb_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named vicon_xb_genlisp
-
-# Build rule for target.
-vicon_xb_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_genlisp
-.PHONY : vicon_xb_genlisp
-
-# fast build rule for target.
-vicon_xb_genlisp/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_genlisp.dir/build.make vicon_xb/CMakeFiles/vicon_xb_genlisp.dir/build
-.PHONY : vicon_xb_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named _vicon_xb_generate_messages_check_deps_viconXbSrv
-
-# Build rule for target.
-_vicon_xb_generate_messages_check_deps_viconXbSrv: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _vicon_xb_generate_messages_check_deps_viconXbSrv
-.PHONY : _vicon_xb_generate_messages_check_deps_viconXbSrv
-
-# fast build rule for target.
-_vicon_xb_generate_messages_check_deps_viconXbSrv/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/_vicon_xb_generate_messages_check_deps_viconXbSrv.dir/build.make vicon_xb/CMakeFiles/_vicon_xb_generate_messages_check_deps_viconXbSrv.dir/build
-.PHONY : _vicon_xb_generate_messages_check_deps_viconXbSrv/fast
-
-#=============================================================================
-# Target rules for targets named vicon_xb_generate_messages_lisp
-
-# Build rule for target.
-vicon_xb_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_generate_messages_lisp
-.PHONY : vicon_xb_generate_messages_lisp
-
-# fast build rule for target.
-vicon_xb_generate_messages_lisp/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_generate_messages_lisp.dir/build.make vicon_xb/CMakeFiles/vicon_xb_generate_messages_lisp.dir/build
-.PHONY : vicon_xb_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named vicon_xb_generate_messages_nodejs
-
-# Build rule for target.
-vicon_xb_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vicon_xb_generate_messages_nodejs
-.PHONY : vicon_xb_generate_messages_nodejs
-
-# fast build rule for target.
-vicon_xb_generate_messages_nodejs/fast:
-	$(MAKE) -f vicon_xb/CMakeFiles/vicon_xb_generate_messages_nodejs.dir/build.make vicon_xb/CMakeFiles/vicon_xb_generate_messages_nodejs.dir/build
-.PHONY : vicon_xb_generate_messages_nodejs/fast
+camera_generate_messages/fast:
+	$(MAKE) -f camera/CMakeFiles/camera_generate_messages.dir/build.make camera/CMakeFiles/camera_generate_messages.dir/build
+.PHONY : camera_generate_messages/fast
 
 # Help Target
 help:
@@ -1017,63 +744,42 @@ help:
 	@echo "... install/strip"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... _catkin_empty_exported_target"
-	@echo "... serial_example"
-	@echo "... serial"
-	@echo "... _run_tests_serial_gtest_serial-test-timer"
-	@echo "... run_tests_serial_gtest"
-	@echo "... serial-test-timer"
-	@echo "... run_tests_serial"
-	@echo "... _run_tests_serial_gtest_serial-test"
-	@echo "... serial-test"
-	@echo "... _run_tests_serial"
-	@echo "... _run_tests_serial_gtest"
-	@echo "... run_tests_serial_gtest_serial-test"
-	@echo "... run_tests_serial_gtest_serial-test-timer"
-	@echo "... clean_test_results_serial"
-	@echo "... lyf_playground_generate_messages_py"
-	@echo "... lyf_playground_generate_messages_nodejs"
-	@echo "... lyf_playground_genlisp"
-	@echo "... lyf_playground_generate_messages_lisp"
+	@echo "... camera_genpy"
+	@echo "... camera_generate_messages_py"
+	@echo "... camera_gencfg"
+	@echo "... camera_generate_messages_nodejs"
+	@echo "... camera_geneus"
+	@echo "... camera_generate_messages_cpp"
+	@echo "... _camera_generate_messages_check_deps_IntArray"
+	@echo "... camera_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... _lyf_playground_generate_messages_check_deps_IntArray"
+	@echo "... camera_gennodejs"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... lyf_playground_gennodejs"
 	@echo "... roscpp_generate_messages_py"
-	@echo "... lyf_playground_genpy"
+	@echo "... camera_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_eus"
+	@echo "... camera_gencpp"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... AttitudePublisher"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... lyf_playground_generate_messages"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... _lyf_playground_generate_messages_check_deps_FloatArray"
-	@echo "... lyf_playground_gencpp"
-	@echo "... lyf_playground_generate_messages_eus"
-	@echo "... lyf_playground_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... lyf_playground_geneus"
-	@echo "... vicon_xb_node"
-	@echo "... vicon_xb_genpy"
-	@echo "... vicon_xb_generate_messages_py"
-	@echo "... vicon_xb_generate_messages"
-	@echo "... vicon_xb_gencpp"
-	@echo "... vicon_xb_geneus"
-	@echo "... vicon_xb_gennodejs"
-	@echo "... vicon_xb_generate_messages_cpp"
-	@echo "... _vicon_xb_generate_messages_check_deps_viconPoseMsg"
-	@echo "... vicon_xb_generate_messages_eus"
-	@echo "... vicon_xb_genlisp"
-	@echo "... _vicon_xb_generate_messages_check_deps_viconXbSrv"
-	@echo "... vicon_xb_generate_messages_lisp"
-	@echo "... vicon_xb_generate_messages_nodejs"
+	@echo "... camera_genlisp"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... dynamic_reconfigure_generate_messages_py"
+	@echo "... dynamic_reconfigure_generate_messages_eus"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... dynamic_reconfigure_generate_messages_lisp"
+	@echo "... dynamic_reconfigure_generate_messages_nodejs"
+	@echo "... _camera_generate_messages_check_deps_FloatArray"
+	@echo "... camera_generate_messages"
 .PHONY : help
 
 

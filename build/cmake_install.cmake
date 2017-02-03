@@ -117,9 +117,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ubuntu/drones/build/gtest/cmake_install.cmake")
-  include("/home/ubuntu/drones/build/serial/cmake_install.cmake")
-  include("/home/ubuntu/drones/build/lyf_playground/cmake_install.cmake")
-  include("/home/ubuntu/drones/build/vicon_xb/cmake_install.cmake")
+  include("/home/ubuntu/drones/build/camera/cmake_install.cmake")
 
 endif()
 
