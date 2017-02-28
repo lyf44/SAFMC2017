@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+<node pkg="camera" name="CtrCordPublisher" type="CtrCordPublisher.py" respawn="true"/>
+<node pkg="camera" name="FinalAttitudePublisher" type="FinalAttitudePublisher" respawn="true" output="screen"/>
+
+</launch>
