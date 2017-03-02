@@ -51,6 +51,7 @@ add_message_files(
    FILES
    IntArray.msg
    FloatArray.msg
+   PixData.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -129,9 +130,10 @@ include_directories(
 
 
 ## Declare a C++ library
-# add_library(camera
-#   src/${PROJECT_NAME}/camera.cpp
-# )
+add_library(PulsePID src/controller/PulsePID.cpp)
+add_library(DiscretePID src/controller/DiscretePID.cpp)
+add_library(PushBackPID src/controller/PushBackPID.cpp)
+add_library(PID src/controller/PID.cpp)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -164,6 +166,7 @@ add_dependencies(FinalAttitudePublisher ${PROJECT_NAME}_gencfg)
 #  ${OpenCV_LIBRARIES}
 # )
 target_link_libraries(AttitudePublisher ${catkin_LIBRARIES})
+target_link_libraries(AttitudePublisher PulsePID DiscretePID PushBackPID PID)
 target_link_libraries(testAttitudePublisher ${catkin_LIBRARIES})
 target_link_libraries(PulseAttitudePublisher ${catkin_LIBRARIES})
 target_link_libraries(FinalAttitudePublisher ${catkin_LIBRARIES})
